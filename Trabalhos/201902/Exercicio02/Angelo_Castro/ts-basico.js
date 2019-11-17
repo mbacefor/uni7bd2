@@ -81,9 +81,3 @@ const success = rawOperations.every( rawOperation => {
 if ( success ) {
     console.log( 'ESCALONAMENTO VÁLIDO!' )
 }
-
-// EXEMPLOS
-// válido = 'r1(a);w1(a);r2(a);w2(a)c1'
-// inválido = 'r1(a);r2(a);w1(a);w2(a)c1'
-// válido =  'r2(X);r1(Y);w1(Y);r2(Y);w1(Z);c1;w2(Y);r2(Z);w2(Z);c2'
-// inválido = 'r2(X);r1(Y);r2(Y);w1(Z);c1;w2(Y);r2(Z);w1(Y);w2(Z);c2'
