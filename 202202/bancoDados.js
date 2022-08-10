@@ -1,6 +1,6 @@
 
 var fs = require('fs');
-var data = fs.readFileSync('database.json', 'utf8');
+var data = fs.readFileSync('202202/database.json', 'utf8');
 var jsonBD = JSON.parse(data);
 var bancoDados = new Map();
 
@@ -36,7 +36,7 @@ function write(chave, valor) {
         break;
     }
     
-    fs.writeFile('database.json', JSON.stringify(jsonBD), function (err) {
+    fs.writeFile('202202/database.json', JSON.stringify(jsonBD), function (err) {
         if (err) throw err;
         console.log('Saved!');
     });
